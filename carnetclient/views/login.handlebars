@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/main1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>CAR BLOCKY | HOME</title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="blocky.html">Home</a>
+    <a href="cl.html">Customer Login</a>
+    <div class="dropdown">
+      <button class="dropbtn">Agent Login
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="details.html">Add Details</a>
+        <a href="claim.html">Add Claim Details</a>
+      </div>
+    </div> 
+  </div>
+       
+
+
+      <section>
+        <img class="mySlides" src="../public/css/car-salesman-151336938-small.jpg"
+        style="width:100%">
+        <img class="mySlides" src="../public/css/slide-bg-1.jpg"
+        style="width:100%">
+        <img class="mySlides" src="../public/css/249253.jpg"
+        style="width:100%">
+      </section>
+
+      <section class="w3-container w3-center w3-content" style="max-width:300px">
+        <form name="login">
+          Username :<input type="text" name="userid"/><br><br>
+          Password :<input type="password" name="pswrd"/><br><br>
+          <input type="button" onclick="check(this.form)" value="Login"/>
+          <input type="reset" value="Cancel"/>
+          </form>
+          <script language="javascript">
+          function check(form)
+          {
+           /the following code checkes whether the entered userid and password are matching/
+           if(form.userid.value == "carnet" && form.pswrd.value == "carnet")
+            {
+              window.open('carnet/carnetclient/views/regstration.html')
+            }
+           else
+           {
+             alert("Error Password or Username")
+            }
+          }
+          </script> 
+      </section>
+
+     
+      <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">www.kba.com</a>
+        </p>
+      </footer>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);
+      }
+      </script>
+
+      </body>
+</html>

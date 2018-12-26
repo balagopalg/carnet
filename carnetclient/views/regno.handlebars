@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CAR BLOCKY | DETAILS</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/main1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <a href="blocky.html">Home</a>
+        <a href="cl.html">Customer Login</a>
+        <div class="dropdown">
+          <button class="dropbtn">Agent Login
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="detail.html">Add Details</a>
+            <a href="claim.html">Add Claim Details</a>
+          </div>
+        </div> 
+      </div>
+           
+    
+    
+          <section>
+            <img class="mySlides" src="../public/css/car-salesman-151336938-small.jpg"
+            style="width:100%">
+            <img class="mySlides" src="../public/css/slide-bg-1.jpg"
+            style="width:100%">
+            <img class="mySlides" src="../public/css/249253.jpg"
+            style="width:100%">
+          </section>
+    
+          <section class="w3-container w3-center w3-content" style="max-width:600px">
+            
+            <div>
+              <form action="/action_page.php">
+                <label for="fname">Vehicle Number</label>
+                <input type="text" id="fname" name="Vehile NUmber" placeholder="vehicle number">
+            
+                <input type="submit" value="Submit">
+            </div>
+          </section>
+    
+         
+          <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <p class="w3-medium">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">www.kba.com</a>
+            </p>
+          </footer>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 5000);
+          }
+          </script>
+</body>
+</html>
