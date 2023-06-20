@@ -14,7 +14,7 @@
     "protobufjs": "^6.7.3",
     "secp256k1": "^3.2.5",
     "uuid": "^3.0.1",
-    "zeromq": "^4.2.1",
+    "zeromq": "^5.2.5",
     "sawtooth-sdk": "^1.0.2",
     "text-encoding": "^0.6.4"
   },
