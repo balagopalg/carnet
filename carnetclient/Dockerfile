@@ -13,7 +13,7 @@
 # limitations under the License.
 # -----------------------------------------------------------------------------
 
-FROM ubuntu:xenial
+FROM ubuntu:xenial-20210416
 
 ARG DEBIAN_FRONTEND=noninteractive
 
